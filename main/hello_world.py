@@ -1,4 +1,5 @@
 import unittest
+from pyunitreport import HTMLTestRunner
 from selenium import webdriver
 
 class HelloWorld(unittest.TestCase):
@@ -12,8 +13,12 @@ class HelloWorld(unittest.TestCase):
         driver = self.driver
         driver.get('https://www.google.com.bo')
 
+    def test_visit_wikipedia(self):
+        driver = self.driver
+        driver.get('https://www.wikipedia.org')
+
     def tearDown(self):
         self.driver.quit()
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(testRunner = HTMLTestRunner(output = 'hello_world', report_name = 'report_hello_world'))
