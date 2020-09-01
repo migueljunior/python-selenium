@@ -5,7 +5,7 @@ from selenium import webdriver
 class HelloWorld(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path = r'../resources/chromedriver')
+        self.driver = webdriver.Chrome(executable_path = '../resources/chromedriver')
         driver = self.driver
         driver.implicitly_wait(10)
 
