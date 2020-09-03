@@ -7,7 +7,6 @@ This is a repository will examples to use selenium with python
 - Pip 3
 - Selenium
 - PyUnitReport
-- PyTest
 - Web Browser Driver
 
 # Installation (Python & pip)
